@@ -2,44 +2,60 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet"  href="css/estilos.css"  />
-    <link rel="stylesheet"  href="css/libs/materialize.min.css"/>
-    <link rel="stylesheet" href="css/libs/google-fonts.css">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<div class = "container">
-		<h1 class="center">Alura Typer</h1>
-		<p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-		<ul class="informacoes center">
-		<li>
-			<i class="small material-icons icones">description</i>	
-			<span id="tamanho-frase"></span> palavras
-		</li>
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase">5</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">10</span> segundos
+            </li>
+        </ul>
 
-		<li>
-			<i class="small material-icons icones">query_builder</i>
-			<span id="tempo-digitacao">10</span> segundos</li>
-		</ul>
+        <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
 
-		<textarea class="campo-digitacao"></textarea>
-		
-		<div class = "" id="botao-reiniciar">
-			<a class="btn-floating btn-large waves-effect waves-light red">
-    			<i class="material-icons">add</i>	
-			</a>
-		</div>
+        <div class="botoes">
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
 
-		
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
 
-		<ul class="informacoes center">
-		<li><span id="contador-caracteres"></span> caracteres</li>
-		<li><span id ="contador-palavras"></span> Palavras</li>
-		</ul>
-	</div>
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+
 </body>
 </html>
