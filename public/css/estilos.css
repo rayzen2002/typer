@@ -1,6 +1,24 @@
+.frase{
+	font-size: 20px;
+	text-align: left;	
+}
 .campo-digitacao{
-	display: block;
-	width: 500px;
-	height: 250px;
-	margin: 20px auto;
+	font-size: 20px;
+	height: 130px;
+	border: solid 3px black;
+}
+.campo-desativado{
+	background-color: lightgray;
+}
+.campo-ativado{
+	background-color: #FFFFFF;
+}
+.campo-correto{
+	border: solid 3px green;
+}
+.campo-errado{
+	border: solid 3px red;
+}
+.icones{
+	vertical-align: middle;
 }

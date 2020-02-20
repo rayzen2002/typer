@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet"  href="css/estilos.css"  />
+    <link rel="stylesheet"  href="css/libs/materialize.min.css"/>
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
     <title>Alura Typer</title>
 </head>
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua asd adsas asd.</p>
+	<div class = "container">
+		<h1 class="center">Alura Typer</h1>
+		<p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-frase"></span> palavras</li>
-        <li><span id="tempo-digitacao">3</span> segundos</li>
-    </ul>
+		<ul class="informacoes center">
+		<li>
+			<i class="small material-icons icones">description</i>	
+			<span id="tamanho-frase"></span> palavras
+		</li>
 
-    <textarea class="campo-digitacao"></textarea>
-    <button id="botao-reiniciar">Reiniciar jogo</button>
+		<li>
+			<i class="small material-icons icones">query_builder</i>
+			<span id="tempo-digitacao">10</span> segundos</li>
+		</ul>
 
-    <ul class="informacoes">
-	    <li><span id="contador-caracteres"></span> caracteres</li>
-        <li><span id ="contador-palavras"></span> Palavras</li>
-    </ul>
+		<textarea class="campo-digitacao"></textarea>
+		
+		<div class = "" id="botao-reiniciar">
+			<a class="btn-floating btn-large waves-effect waves-light red">
+    			<i class="material-icons">add</i>	
+			</a>
+		</div>
+
+		
+
+		<ul class="informacoes center">
+		<li><span id="contador-caracteres"></span> caracteres</li>
+		<li><span id ="contador-palavras"></span> Palavras</li>
+		</ul>
+	</div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
